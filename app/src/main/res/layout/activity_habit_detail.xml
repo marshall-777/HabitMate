@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Название привычки -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_habit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название привычки"
+                android:minHeight="48dp"
+                android:contentDescription="Название привычки" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Периодичность -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_periodicity"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_periodicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Периодичность"
+                android:inputType="none"
+                android:focusable="false"
+                android:minHeight="48dp"
+                android:contentDescription="Периодичность" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Дни недели -->
+        <LinearLayout
+            android:id="@+id/layout_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cb_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пн" />
+            <CheckBox
+                android:id="@+id/cb_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вт" />
+            <CheckBox
+                android:id="@+id/cb_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ср" />
+            <CheckBox
+                android:id="@+id/cb_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чт" />
+            <CheckBox
+                android:id="@+id/cb_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пт" />
+            <CheckBox
+                android:id="@+id/cb_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сб" />
+            <CheckBox
+                android:id="@+id/cb_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вс" />
+        </LinearLayout>
+
+        <!-- Дата -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дата"
+                android:focusable="false"
+                android:minHeight="48dp"
+                android:contentDescription="Дата" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Время -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Время"
+                android:focusable="false"
+                android:minHeight="48dp"
+                android:contentDescription="Время" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Кнопка сохранить -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="СОХРАНИТЬ" />
+        <Button
+            android:id="@+id/btn_view_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Показать прогресс"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

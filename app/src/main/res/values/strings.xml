@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HabitMate</string>
+    <string name="habit_name">Название привычки</string>
+    <string name="periodicity">Периодичность</string>
+    <string name="mon">Пн</string>
+    <string name="tue">Вт</string>
+    <string name="wed">Ср</string>
+    <string name="thu">Чт</string>
+    <string name="fri">Пт</string>
+    <string name="sat">Сб</string>
+    <string name="sun">Вс</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="save">Сохранить</string>
+    <string name="menu_music">Музыка</string>
+    <string name="menu_logout">Сменить аккаунт</string>
+    <string-array name="periodicity_array">
+        <item>Ежедневно</item>
+        <item>Через день</item>
+        <item>Несколько раз в неделю</item>
+        <item>Несколько раз в месяц</item>
+    </string-array>
+</resources>

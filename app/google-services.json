@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "240578344635",
+    "firebase_url": "https://habitmate-3a5c7-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "habitmate-3a5c7",
+    "storage_bucket": "habitmate-3a5c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240578344635:android:28ee34b96866f489e31b9e",
+        "android_client_info": {
+          "package_name": "com.example.habitmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQbJz0a61xiFuTS01j9pPpFmPb3kipJ3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
